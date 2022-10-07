@@ -45,7 +45,7 @@
 
          <label for ="floatingInput">Enter the Password</label>
 
-         <label for ="floatingInput">Enter Password</label>
+         
 
         </div>
 
