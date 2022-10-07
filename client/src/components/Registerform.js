@@ -42,7 +42,7 @@
          value={user.password} 
          onChange={HandleChange}
          />
-         <label for ="floatingInput">Enter Password</label>
+         <label for ="floatingInput">Enter password</label>
         </div>
 
         <div className="form-floating mb-3">
