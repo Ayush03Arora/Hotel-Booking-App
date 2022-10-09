@@ -49,10 +49,11 @@ const Login = ({history}) =>{
 
 
 
-    return (
+   return (
         <>
-        <div className="container-fluid bg-secondary h1 p-5 text-center">
-            <h1>Login</h1> 
+        <div className='container col-6 bg-light p-0 rounded'>
+        <div className=" back m-0 p-5  text-center rounded-top ">
+            <h1 className='text-white'>Login</h1> 
         </div>
 
         <div className='container'>
@@ -60,6 +61,7 @@ const Login = ({history}) =>{
         <div className='col-md-6 offset-md-3'>
             <LoginForm handleChange={handleChange} handleSubmit={handleSubmit} user={user}/>
         </div>   
+        </div>
         </div>
         </div>
         </>
