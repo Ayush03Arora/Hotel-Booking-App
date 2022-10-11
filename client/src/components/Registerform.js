@@ -1,8 +1,22 @@
-
+import './loginform.css';
 
         const RegisterForm =({  handleSubmit,user,HandleChange }) =>(
+        
+                <div className="box-form">
+                <div className="left">  
+                        <div className="overlay">	
+                        </div>
+                </div>
+                    
+        
+                    <div className="right">
         <form onSubmit={handleSubmit} className="mt-3">
-        <div className="form-floating mb-3 ">
+        <h5>Register</h5>
+            <br></br>
+		    <p>Account already Created? 
+            <a href="#">Log in to your Account</a> to continue further</p>
+
+        <div className="form-floating mb-2 ">
          <input 
          type="text" 
          name="name"
@@ -16,7 +30,7 @@
         </div>
 
 
-        <div className="form-floating mb-3">
+        <div className="form-floating mb-2">
          
          <input 
          type="email" 
@@ -31,7 +45,7 @@
         </div>
 
 
-        <div className="form-floating mb-3">
+        <div className="form-floating mb-2">
         
          <input 
          type="password" 
@@ -49,7 +63,7 @@
 
         </div>
 
-        <div className="form-floating mb-3">
+        <div className="form-floating mb-2">
 
          <input 
          type="password" 
@@ -63,9 +77,14 @@
          <label for ="floatingInput">Re-Enter Password </label>
         </div>
          <div className="d-flex justify-content-center">
-        <button className='btn btn-primary mb-3 '>Submit</button>
+        <button className='btn btn-primary mt-3 '>Submit</button>
         </div>
         </form>
+        </div>
+        </div>
         );
 
         export default RegisterForm;
+
+
+        

@@ -64,20 +64,14 @@ else{
 
 
     return (
-        <>
+    
         
         
-        <div className='container col-6 bg-light p-0 rounded'>
-        <div className=" back m-0 p-5  text-center rounded-top ">
-            <h1 className='text-white'>Register</h1>   
-        </div>
-        <div className='row'>
-            <div className="col-md-6 offset-md-3">
+        
+            <div className='container'>
              <RegisterForm  HandleChange={HandleChange} handleSubmit={handleSubmit} user={user}  />
             </div>
-        </div>
-        </div>
-        </>
+        
     )
     }
     
