@@ -24,11 +24,13 @@ const Login = ({history}) =>{
         try{
         await login(user)
        .then(res=> {
-        if (res.data) {
+        if(res.data.message==="Wrong Password" || res.data.message==="User not registered")
+        toast.error(res.data.message);
+        else if (res.data) {
            // console.log(res.data.message);
            // save user and token to local storage
            window.localStorage.setItem("auth",JSON.stringify(res.data));
-          
+           toast.success("Login Successfull");
            // save user and token to redux
            dispatch({
             type:"LOGGED_IN_USER",

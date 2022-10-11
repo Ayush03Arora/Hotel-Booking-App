@@ -18,6 +18,7 @@ const DashboardSeller =() =>{
       try{
       let res = await createConnectAccount(auth.token);
       console.log(res);
+      window.open(res.data);
       }
       catch(err)
       {
