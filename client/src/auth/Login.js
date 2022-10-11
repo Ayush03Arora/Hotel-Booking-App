@@ -53,12 +53,12 @@ const Login = ({history}) =>{
 
     return (
     
+        
 
         <div className='container'>
         
             <LoginForm handleChange={handleChange} handleSubmit={handleSubmit} user={user}/>
-        
-        </div>
+        </div>   
         
     )
     }
